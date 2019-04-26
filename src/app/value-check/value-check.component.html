@@ -1,0 +1,81 @@
+<!-- 
+     
+          <div fxLayout="row" fxLayoutAlign="space-around center" >
+      
+
+      
+            <mat-checkbox  class="example-margin" [(ngModel)]="item">{{item}}</mat-checkbox>
+               <br *ngIf="i%6==0" /> 
+         
+    
+        
+     
+      </ng-container> -->
+
+
+<!-- 
+<ng-container *ngFor="let item of dataList;let i = index">
+  <div fxLayout="row" fxLayoutAlign="space-around center" style="font-size:20px;">
+
+    <div fxFelx="25">
+      {{item}}
+    </div>
+    <div fxFelx="25">
+      {{item}}
+
+    </div>
+    <div fxFelx="50">
+      {{item}}
+    </div>
+  </div>
+  </div> -->
+
+<mat-card style="margin:100px 200px 50px 200px">
+
+
+
+    內容
+
+  <mat-card-content>
+
+    <div fxLayout="column" fxLayoutAlign="space-evenly center" *ngFor="let item of dataList;let i = index" >
+
+      <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
+        <div fxFelx="25">
+          {{item}}
+        </div>
+        <div fxFelx="25">
+          2
+        </div>
+
+        <div fxFelx="25">
+          3
+        </div>
+
+        <div fxFelx="25">
+          4
+        </div>
+
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
+          <div fxFelx="25">
+            1
+          </div>
+          <div fxFelx="25">
+            2
+          </div>
+  
+          <div fxFelx="25">
+            3
+          </div>
+  
+          <div fxFelx="25">
+            4
+          </div>
+  
+        </div>
+    </div>
+
+  </mat-card-content>
+</mat-card>
